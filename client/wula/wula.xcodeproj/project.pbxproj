@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		22F9FE141B8EE554005F0C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE131B8EE554005F0C14 /* main.m */; };
 		22F9FE171B8EE554005F0C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE161B8EE554005F0C14 /* AppDelegate.m */; };
-		22F9FE1A1B8EE554005F0C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE191B8EE554005F0C14 /* ViewController.m */; };
-		22F9FE1D1B8EE554005F0C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE1B1B8EE554005F0C14 /* Main.storyboard */; };
 		22F9FE1F1B8EE554005F0C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE1E1B8EE554005F0C14 /* Assets.xcassets */; };
 		22F9FE221B8EE554005F0C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE201B8EE554005F0C14 /* LaunchScreen.storyboard */; };
 		22F9FE2D1B8EE554005F0C14 /* wulaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE2C1B8EE554005F0C14 /* wulaTests.m */; };
 		22F9FE381B8EE554005F0C14 /* wulaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE371B8EE554005F0C14 /* wulaUITests.m */; };
+		81ADB0A619228781183B75A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08569B179B6652A36F31748D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052A5070184B4DD61E8832F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		082A6C5AB7CD49689378D35C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		08569B179B6652A36F31748D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F9FE0F1B8EE554005F0C14 /* wula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F9FE131B8EE554005F0C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22F9FE151B8EE554005F0C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22F9FE161B8EE554005F0C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22F9FE181B8EE554005F0C14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22F9FE191B8EE554005F0C14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22F9FE1C1B8EE554005F0C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F9FE1E1B8EE554005F0C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F9FE211B8EE554005F0C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22F9FE231B8EE554005F0C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81ADB0A619228781183B75A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +85,8 @@
 				22F9FE2B1B8EE554005F0C14 /* wulaTests */,
 				22F9FE361B8EE554005F0C14 /* wulaUITests */,
 				22F9FE101B8EE554005F0C14 /* Products */,
+				7FA9EAD06AAC47960C77A448 /* Pods */,
+				9D15F334569D8CA2CC77037E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +105,6 @@
 			children = (
 				22F9FE151B8EE554005F0C14 /* AppDelegate.h */,
 				22F9FE161B8EE554005F0C14 /* AppDelegate.m */,
-				22F9FE181B8EE554005F0C14 /* ViewController.h */,
-				22F9FE191B8EE554005F0C14 /* ViewController.m */,
-				22F9FE1B1B8EE554005F0C14 /* Main.storyboard */,
 				22F9FE1E1B8EE554005F0C14 /* Assets.xcassets */,
 				22F9FE201B8EE554005F0C14 /* LaunchScreen.storyboard */,
 				22F9FE231B8EE554005F0C14 /* Info.plist */,
@@ -140,6 +139,23 @@
 			path = wulaUITests;
 			sourceTree = "<group>";
 		};
+		7FA9EAD06AAC47960C77A448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				082A6C5AB7CD49689378D35C /* Pods.debug.xcconfig */,
+				052A5070184B4DD61E8832F8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D15F334569D8CA2CC77037E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08569B179B6652A36F31748D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22F9FE3C1B8EE554005F0C14 /* Build configuration list for PBXNativeTarget "wula" */;
 			buildPhases = (
+				F4033F340165D7445DED0F84 /* Check Pods Manifest.lock */,
 				22F9FE0B1B8EE554005F0C14 /* Sources */,
 				22F9FE0C1B8EE554005F0C14 /* Frameworks */,
 				22F9FE0D1B8EE554005F0C14 /* Resources */,
+				5FF8BE8C4C7BA165C3B70B35 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +263,6 @@
 			files = (
 				22F9FE221B8EE554005F0C14 /* LaunchScreen.storyboard in Resources */,
 				22F9FE1F1B8EE554005F0C14 /* Assets.xcassets in Resources */,
-				22F9FE1D1B8EE554005F0C14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,12 +282,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FF8BE8C4C7BA165C3B70B35 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4033F340165D7445DED0F84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22F9FE0B1B8EE554005F0C14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F9FE1A1B8EE554005F0C14 /* ViewController.m in Sources */,
 				22F9FE171B8EE554005F0C14 /* AppDelegate.m in Sources */,
 				22F9FE141B8EE554005F0C14 /* main.m in Sources */,
 			);
@@ -308,14 +357,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22F9FE1B1B8EE554005F0C14 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22F9FE1C1B8EE554005F0C14 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22F9FE201B8EE554005F0C14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +450,7 @@
 		};
 		22F9FE3D1B8EE554005F0C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 082A6C5AB7CD49689378D35C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wula/Info.plist;
@@ -420,6 +462,7 @@
 		};
 		22F9FE3E1B8EE554005F0C14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052A5070184B4DD61E8832F8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wula/Info.plist;
@@ -496,6 +539,7 @@
 				22F9FE3E1B8EE554005F0C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F9FE3F1B8EE554005F0C14 /* Build configuration list for PBXNativeTarget "wulaTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +548,7 @@
 				22F9FE411B8EE554005F0C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F9FE421B8EE554005F0C14 /* Build configuration list for PBXNativeTarget "wulaUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +557,7 @@
 				22F9FE441B8EE554005F0C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

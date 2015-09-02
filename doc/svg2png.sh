@@ -1,0 +1,1 @@
+qlmanage -t -s $3 -o $1 $2
