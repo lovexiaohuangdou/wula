@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22726C111B96DDE200D0767C /* CCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22726C101B96DDE200D0767C /* CCMainViewController.m */; };
 		22F9FE141B8EE554005F0C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE131B8EE554005F0C14 /* main.m */; };
 		22F9FE171B8EE554005F0C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE161B8EE554005F0C14 /* AppDelegate.m */; };
 		22F9FE1F1B8EE554005F0C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE1E1B8EE554005F0C14 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 		052A5070184B4DD61E8832F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		082A6C5AB7CD49689378D35C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		08569B179B6652A36F31748D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22726C0F1B96DDE200D0767C /* CCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainViewController.h; sourceTree = "<group>"; };
+		22726C101B96DDE200D0767C /* CCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainViewController.m; sourceTree = "<group>"; };
 		22F9FE0F1B8EE554005F0C14 /* wula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F9FE131B8EE554005F0C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22F9FE151B8EE554005F0C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22726C0D1B96DDA800D0767C /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		22726C0E1B96DDA800D0767C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				22726C0F1B96DDE200D0767C /* CCMainViewController.h */,
+				22726C101B96DDE200D0767C /* CCMainViewController.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		22F9FE061B8EE553005F0C14 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +122,8 @@
 		22F9FE111B8EE554005F0C14 /* wula */ = {
 			isa = PBXGroup;
 			children = (
+				22726C0D1B96DDA800D0767C /* 3rd */,
+				22726C0E1B96DDA800D0767C /* view */,
 				22F9FE151B8EE554005F0C14 /* AppDelegate.h */,
 				22F9FE161B8EE554005F0C14 /* AppDelegate.m */,
 				22F9FE1E1B8EE554005F0C14 /* Assets.xcassets */,
@@ -321,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F9FE171B8EE554005F0C14 /* AppDelegate.m in Sources */,
+				22726C111B96DDE200D0767C /* CCMainViewController.m in Sources */,
 				22F9FE141B8EE554005F0C14 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
