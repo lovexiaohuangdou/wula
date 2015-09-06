@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "CCSlideView.h"
+@interface ViewController : UIViewController<CCSlideViewDataSource, CCSlideViewDelegate>
 
 
 @end

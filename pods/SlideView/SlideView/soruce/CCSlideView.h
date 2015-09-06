@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_OPTIONS(NSInteger, CCLayoutOptions) {
-  CCLayoutFormatAlignAllLeft =1,
-//  CCLayoutFormatAlignAllRigth =2,
-  CCLayoutFormatAliginCenter = 3,
-  CCLayoutFormatAliginBothSide = 4
+  CCLayoutFormatAlignAllLeft =0,
+//  CCLayoutFormatAlignAllRigth =1,
+  CCLayoutFormatAliginCenter = 2,
+  CCLayoutFormatAliginBothSide = 3
 };
 @protocol CCSlideViewDataSource <NSObject>
 - (NSArray *) slideViewWithTitles:(UIView *) view;
