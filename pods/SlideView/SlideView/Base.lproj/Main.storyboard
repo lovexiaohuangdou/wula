@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-Wc-vNn" customClass="CCSlideView">
-                                <rect key="frame" x="0.0" y="49" width="240" height="44"/>
+                                <rect key="frame" x="0.0" y="49" width="250" height="171"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>

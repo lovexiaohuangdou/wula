@@ -29,4 +29,6 @@ typedef NS_OPTIONS(NSInteger, CCLayoutOptions) {
 @property (nonatomic, assign) id<CCSlideViewDataSource> dataSource;
 @property (nonatomic, assign) id<CCSlideViewDelegate> delegate;
 @property (nonatomic, assign) CCLayoutOptions type;
+@property (nonatomic, strong) UIScrollView *scrollview;
+- (void) setupView;
 @end

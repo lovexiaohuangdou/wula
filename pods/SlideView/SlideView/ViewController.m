@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     self.slideView.dataSource = self;
+    [self.slideView setupView];
     [super viewDidLoad];
 }
 
@@ -25,8 +26,13 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (void) viewDidAppear:(BOOL)animated {
+
+    NSLog(@"%f",    self.slideView.scrollview.contentSize.width);
+    [super viewDidAppear:animated];
+}
 - (NSArray *) slideViewWithTitles:(UIView *) view {
-    return @[@"测试一",@"测试二",@"测试三",@"测试四",@"测试五"];
+    return @[@"测试一111",@"测试一111",@"测试一111",@"测试一111",@"测试一111",@"测试一111"];
 }
 #pragma mark slide view data source
 

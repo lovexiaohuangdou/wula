@@ -10,7 +10,6 @@
 
 
 @interface CCSlideView()
-@property (nonatomic, strong) UIScrollView *scrollview;
 @property (nonatomic, strong) UIView *containView;
 @property (nonatomic, strong) NSMutableArray *buttonArray;
 @end
@@ -49,7 +48,7 @@
 }
 
 - (void) layoutSubviews {
-    [self setupView];
+
     [super layoutSubviews];
 }
 - (void)willMoveToSuperview:(nullable UIView *)newSuperview {
@@ -77,8 +76,20 @@
             button.translatesAutoresizingMaskIntoConstraints = NO;
             [self.scrollview addSubview: button];
           if (originButton == nil) {
-            [self.scrollview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[button]" options:0 metrics:@{} views:NSDictionaryOfVariableBindings(button)]];
-              [self.scrollview addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[button]" options:0 metrics:@{} views:NSDictionaryOfVariableBindings(button)]];
+              [self.scrollview addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                          attribute:NSLayoutAttributeLeft
+                                                                          relatedBy:NSLayoutRelationEqual
+                                                                             toItem:self.scrollview
+                                                                          attribute:NSLayoutAttributeLeft
+                                                                         multiplier:1
+                                                                           constant:0]];
+              [self.scrollview addConstraint:[NSLayoutConstraint constraintWithItem:button
+                                                                          attribute:NSLayoutAttributeTop
+                                                                          relatedBy:NSLayoutRelationEqual
+                                                                             toItem:self.scrollview
+                                                                          attribute:NSLayoutAttributeTop
+                                                                         multiplier:1
+                                                                           constant:0]];
               
           } else {
               [self.scrollview addConstraint:[NSLayoutConstraint constraintWithItem:button
@@ -95,10 +106,17 @@
                                                                           attribute:NSLayoutAttributeTop
                                                                          multiplier:1
                                                                            constant:0]];
-
           }
             originButton = button;
         }
+          [self.scrollview addConstraint:[NSLayoutConstraint constraintWithItem:self.scrollview
+                                                                      attribute:NSLayoutAttributeRight
+                                                                      relatedBy:NSLayoutRelationEqual
+                                                                         toItem: originButton
+                                                                      attribute:NSLayoutAttributeRight
+                                                                     multiplier:1
+                                                                       constant:0]];
+
       }
         break;
 //      case CCLayoutFormatAlignAllRigth:
@@ -111,5 +129,7 @@
         break;
     }
   }
+    [self setNeedsUpdateConstraints];
+    NSLog(@"contentsize:%f", self.scrollview.contentSize.width);
 }
 @end
